@@ -38,6 +38,10 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/forum">Forum</a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Field Reports</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

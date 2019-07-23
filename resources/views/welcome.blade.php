@@ -90,6 +90,11 @@
             <div class="links">
                 <a href="/forum">Forum</a>
             </div>
+
+            <div class="links">
+                <a href="#">Field Reports</a>
+            </div>
+
         </div>
     </div>
 </body>
