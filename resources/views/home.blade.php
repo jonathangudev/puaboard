@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @php
-$fieldReports = auth()->user->fieldReports();
+$fieldReports = $user->fieldReports();
 @endphp
 
 @section('content')
