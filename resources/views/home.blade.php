@@ -43,7 +43,7 @@ $fieldReports = $user->fieldReports();
         </div>
 
 
-        @foreach($fieldReport as $fieldReports)
+        @foreach($fieldReports as $fieldReport)
         <div class="col-md-8 mt-3">
             <div class="card">
                 <div class="card-header">{{$fieldReport->title}}</div>
