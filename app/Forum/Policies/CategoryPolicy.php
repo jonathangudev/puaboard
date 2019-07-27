@@ -55,7 +55,7 @@ class CategoryPolicy
      */
     public function enableThreads($user, Category $category)
     {
-        if (in_array($user->email, config('admin_emails'))) {
+        if (in_array($user->email, config('app.admin_emails'))) {
             return true;
         } else return false;
     }
@@ -93,7 +93,7 @@ class CategoryPolicy
      */
     public function lockThreads($user, Category $category)
     {
-        if (in_array($user->email, config('admin_emails'))) {
+        if (in_array($user->email, config('app.admin_emails'))) {
             return true;
         } else return false;
     }
@@ -107,7 +107,7 @@ class CategoryPolicy
      */
     public function pinThreads($user, Category $category)
     {
-        if (in_array($user->email, config('admin_emails'))) {
+        if (in_array($user->email, config('app.admin_emails'))) {
             return true;
         } else return false;
     }
@@ -133,7 +133,7 @@ class CategoryPolicy
      */
     public function delete($user, Category $category)
     {
-        if (in_array($user->email, config('admin_emails'))) {
+        if (in_array($user->email, config('app.admin_emails'))) {
             return true;
         } else return false;
     }
