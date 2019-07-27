@@ -25,7 +25,9 @@
                 <div class="card-header">Write a new Field Report</div>
 
                 <div class="card-body">
-                    <form action="/field-report/create">
+                    <form action="/field-report/create" method="POST">
+                        @csrf
+
                         <label for="title">Title</label>
                         <input type="text" name="title">
                         <label for="content">Content</label>
