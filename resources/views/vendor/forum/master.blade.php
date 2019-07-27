@@ -51,7 +51,7 @@
                             <strong><a class="nav-link " href="{{ url('/') }}">
                                     {{ config('app.name', 'Laravel') }}
                                 </a>
-                            </strong>/li>
+                            </strong></li>
                         <li class="nav-item">
                             <a class="nav-link" href="/home">Home</a>
                         </li>
