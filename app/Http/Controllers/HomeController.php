@@ -26,7 +26,8 @@ class HomeController extends Controller
     public function index()
     {
         $user = auth()->user();
-        $allFieldReports = FieldReport::all();
+        $userId = $user->id;
+        $allFieldReports = FieldReport::where('user_id', $userId)->get();
         return view('home', ['user' => $user, 'allFieldReports' => $allFieldReports]);
     }
 
