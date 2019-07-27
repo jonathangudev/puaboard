@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @php
-$fieldReports = $user->fieldReports();
+$fieldReports = $allFieldReports;
 @endphp
 
 @section('content')
