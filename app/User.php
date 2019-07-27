@@ -39,6 +39,6 @@ class User extends Authenticatable
 
     public function fieldReports()
     {
-        return $this->hasMany('App\FieldReports');
+        return $this->hasMany('App\FieldReport');
     }
 }
