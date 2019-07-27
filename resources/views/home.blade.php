@@ -32,11 +32,17 @@ $fieldReports = $allFieldReports;
                     <form action="/field-report/create" method="POST">
                         @csrf
 
-                        <label for="title">Title</label>
-                        <input type="text" name="title">
-                        <label for="content">Content</label>
-                        <input type="text" name="content" rows="10">
-                        <input type="submit" value="Submit">
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input class="form-control" type="text" name="title">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="content">Content</label>
+                            <textarea class="form-control" type="text" name="content" rows="10"></textarea>
+                        </div>
+
+                        <input class="btn btn-primary" type="submit" value="Submit">
                     </form>
                 </div>
             </div>
