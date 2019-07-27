@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\FieldReport;
+
 
 class HomeController extends Controller
 {
@@ -24,5 +26,17 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+    }
+
+    public function saveFieldReport(Request $request)
+    {
+        $fieldReport = new FieldReport();
+        $fieldReport->title = $request->input('title');
+        $fieldReport->content = $request->input('content');
+        $fieldReport->user_id = auth()->user()->id;
+
+        $fieldReport->save();
+
+        return redirect('/home');
     }
 }
