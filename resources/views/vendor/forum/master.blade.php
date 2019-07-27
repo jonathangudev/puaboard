@@ -48,10 +48,10 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-left">
                         <li class="nav-item">
-                            <strong><a class="nav-link " href="{{ url('/') }}">
-                                    {{ config('app.name', 'Laravel') }}
-                                </a>
-                            </strong></li>
+                            <a class="nav-link " href="{{ url('/') }}">
+                                {{ config('app.name', 'Laravel') }}
+                            </a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/home">Home</a>
                         </li>
