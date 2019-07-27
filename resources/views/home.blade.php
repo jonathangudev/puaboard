@@ -22,7 +22,7 @@
 
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Write a Field Report</div>
+                <div class="card-header">Write a new Field Report</div>
 
                 <div class="card-body">
                     <form action="/field-report/create">
