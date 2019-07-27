@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@php
+$fieldReports = auth()->user->fieldReports();
+@endphp
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -20,7 +24,7 @@
             </div>
         </div>
 
-        <div class="col-md-8">
+        <div class="col-md-8 mt-3">
             <div class="card">
                 <div class="card-header">Write a new Field Report</div>
 
@@ -37,6 +41,19 @@
                 </div>
             </div>
         </div>
+
+
+        @foreach($fieldReport as $fieldReports)
+        <div class="col-md-8 mt-3">
+            <div class="card">
+                <div class="card-header">{{$fieldReport->title}}</div>
+
+                <div class="card-body">
+                    {{$fieldReport->content}}
+                </div>
+            </div>
+        </div>
+        @endforeach
 
     </div>
 </div>
