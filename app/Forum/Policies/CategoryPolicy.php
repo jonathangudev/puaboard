@@ -41,7 +41,7 @@ class CategoryPolicy
      */
     public function deleteThreads($user, Category $category)
     {
-        if (in_array($user->email, config('admin_emails'))) {
+        if (in_array($user->email, config('app.admin_emails'))) {
             return true;
         } else return false;
     }
