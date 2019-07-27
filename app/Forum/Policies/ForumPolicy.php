@@ -10,7 +10,7 @@ class ForumPolicy
      */
     public function createCategories($user)
     {
-        if ($user->email == "johnguiscool@gmail.com") {
+        if (in_array($user->email, config('admin_emails'))) {
             return true;
         } else return false;
     }

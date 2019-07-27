@@ -230,4 +230,9 @@ return [
 
     ],
 
+    'admin_emails' => [
+        'johnguiscool@gmail.com',
+        'aghayden@email.arizona.edu'
+    ]
+
 ];
