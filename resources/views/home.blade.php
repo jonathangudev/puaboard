@@ -54,7 +54,7 @@ $fieldReports = $allFieldReports;
 
                 @php
 
-                $fieldReports = $fieldReports->sortBy('created_at');
+                $fieldReports = $fieldReports->sortByDesc('created_at');
 
 
                 @endphp
