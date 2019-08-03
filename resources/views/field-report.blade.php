@@ -30,6 +30,44 @@
         </div>
 
     </div>
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-8 mt-3">
+            <div class="card">
+                <div class="card-header">Comments</div>
+
+                <div class="card-body">
+
+                    @php
+                    $comments = $fieldReport->comments;
+                    @endphp
+
+                    @foreach($comments as $comment)
+                    <div>{{$commit->content}}</div>
+                    <hr>
+                    @endforeach
+
+                    @if($user)
+                    <form action="/field-report/comment/{$fieldReport->id}" method="POST">
+                        @csrf
+
+                        <div class="form-group">
+                            <label for="content">Add comment</label>
+                            <textarea class="form-control" type="text" name="content" rows="3"></textarea>
+                        </div>
+
+                        <input class="btn btn-primary" type="submit" value="Submit">
+                    </form>
+                    @endif
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 </div>
 
 @if($hasPermissions)
