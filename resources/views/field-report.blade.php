@@ -49,7 +49,7 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
 
-                <form action="/field-report/delete/{{$fieldReport->id}}" method="POST">
+                <form action="/field-report/delete/{{$fieldReport->id}}" method="GET">
                     <input type="submit" class="btn btn-danger" value="Confirm Deletion">
                 </form>
             </div>
