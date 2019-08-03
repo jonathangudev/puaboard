@@ -48,7 +48,6 @@
                     <hr>
                     @endforeach
 
-                    @if($user)
                     <form action="/field-report/comment/{$fieldReport->id}" method="POST">
                         @csrf
 
@@ -59,7 +58,6 @@
 
                         <input class="btn btn-primary" type="submit" value="Submit">
                     </form>
-                    @endif
 
                 </div>
 
