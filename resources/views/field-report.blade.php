@@ -50,7 +50,7 @@
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
 
                 <form action="/field-report/{{$fieldReport->id}}" method="DELETE">
-                    <input type="button" class="btn btn-danger" value="Confirm Deletion">
+                    <input type="submit" class="btn btn-danger" value="Confirm Deletion">
                 </form>
             </div>
         </div>
