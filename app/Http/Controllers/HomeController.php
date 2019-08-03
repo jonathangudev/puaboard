@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\FieldReport;
 
+use Auth;
+
+
 
 class HomeController extends Controller
 {
@@ -45,10 +48,19 @@ class HomeController extends Controller
 
     public function getFieldReport($id)
     {
+
+        $user = Auth::user();
+
         $fieldReport = FieldReport::find($id);
 
         if ($fieldReport) {
-            return view('field-report', ['fieldReport' => $fieldReport]);
+            if ($user->id == $fieldReport->user_id) {
+                $hasPermissions = true;
+            } else {
+                $hasPermissions = false;
+            }
+
+            return view('field-report', ['fieldReport' => $fieldReport, 'hasPermissions' => $hasPermissions]);
         } else {
             abort('404');
         }
