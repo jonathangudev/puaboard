@@ -65,4 +65,22 @@ class HomeController extends Controller
             abort('404');
         }
     }
+
+    public function deleteFieldReport($id)
+    {
+        $user = Auth::user();
+
+        $fieldReport = FieldReport::find($id);
+
+        if ($fieldReport) {
+            if ($user->id == $fieldReport->user_id) {
+                $fieldReport->delete();
+                return redirect('home');
+            } else {
+                abort('404');
+            }
+        } else {
+            abort('404');
+        }
+    }
 }
