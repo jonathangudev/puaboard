@@ -22,3 +22,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/field-report/create', 'HomeController@saveFieldReport');
 
 Route::get('/field-report/{id}', 'HomeController@getFieldReport');
+
+Route::delete('/field-report/{id}', 'HomeController@deleteFieldReport');
