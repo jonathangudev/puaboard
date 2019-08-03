@@ -56,12 +56,16 @@ $fieldReports = $allFieldReports;
 
                 $fieldReports = $fieldReports->sortBy('created_at');
 
+                $id = $fieldReport->id;
+
                 @endphp
 
                 <div class="card-body">
-                    @foreach($fieldReports as $fieldReport)
-                    {{$fieldReport->created_at}} - <a href="/field-report/$fieldReport->id">{{$fieldReport->title}}</a>
-                    @endforeach
+                    <ul class="list-group">
+                        @foreach($fieldReports as $fieldReport)
+                        <li class="list-group-flush">{{$fieldReport->created_at}} - <a href="/field-report/$id">{{$fieldReport->title}}</a></li>
+                        @endforeach
+                        <ul>
                 </div>
 
             </div>
