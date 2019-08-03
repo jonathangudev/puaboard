@@ -14,7 +14,7 @@
                     <p>
                         <p>
 
-                            {{$fieldReport->content}}
+                            {!! $fieldReport->content !!}
 
                             @if($hasPermissions)
                             <div class="container">
