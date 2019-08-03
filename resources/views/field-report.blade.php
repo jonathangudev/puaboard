@@ -50,6 +50,7 @@
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
 
                 <form action="/field-report/delete/{{$fieldReport->id}}" method="POST">
+                    @csrf
                     <input type="submit" class="btn btn-danger" value="Confirm Deletion">
                 </form>
             </div>
