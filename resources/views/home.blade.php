@@ -68,19 +68,6 @@ $fieldReports = $allFieldReports;
 
         </div>
 
-
-        @foreach($fieldReports as $fieldReport)
-        <div class="col-md-8 mt-3">
-            <div class="card">
-                <div class="card-header">{{$fieldReport->title}}</div>
-
-                <div class="card-body">
-                    {{$fieldReport->content}}
-                </div>
-            </div>
-        </div>
-        @endforeach
-
     </div>
 </div>
 @endsection
