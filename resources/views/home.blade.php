@@ -48,6 +48,26 @@ $fieldReports = $allFieldReports;
             </div>
         </div>
 
+        <div class="col-md-8 mt-3">
+            <div class="card">
+                <div class="card-header">My Field Reports</div>
+
+                @php
+
+                $fieldReports = $fieldReports->sortBy('created_at');
+
+                @endphp
+
+                <div class="card-body">
+                    @foreach($fieldReports as $fieldReport)
+                    {{$fieldReport->created_at}} - <a href="/field-report/$fieldReport->id">{{$fieldReport->title}}</a>
+                    @endforeach
+                </div>
+
+            </div>
+
+        </div>
+
 
         @foreach($fieldReports as $fieldReport)
         <div class="col-md-8 mt-3">
