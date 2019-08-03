@@ -42,4 +42,15 @@ class HomeController extends Controller
 
         return redirect('/home');
     }
+
+    public function getFieldReport($id)
+    {
+        $fieldReport = FieldReport::find($id);
+
+        if ($fieldReport) {
+            return view('field-report', ['fieldReport' => $fieldReport]);
+        } else {
+            abort('404');
+        }
+    }
 }
