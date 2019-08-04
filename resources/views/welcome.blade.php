@@ -90,7 +90,7 @@
             <div class="links">
                 <a href="/forum">Forum</a>
 
-                <a href="#">Field Reports</a>
+                <a href="/field-report/all">Field Reports</a>
             </div>
 
         </div>
