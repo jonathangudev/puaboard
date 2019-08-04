@@ -95,6 +95,8 @@ class FieldReportController extends Controller
         $comment->field_report_id = $id;
         $comment->content = $request->input('content');
 
+        $comment->save();
+
         return redirect("/field-report/$id");
     }
 }
