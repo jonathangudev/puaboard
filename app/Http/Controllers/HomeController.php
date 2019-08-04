@@ -94,5 +94,7 @@ class HomeController extends Controller
         $comment->user_id = $user->id;
         $comment->field_report_id = $id;
         $comment->content = $request->input('content');
+
+        return redirect("/field-report/$id");
     }
 }
