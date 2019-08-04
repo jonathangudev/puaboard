@@ -19,6 +19,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/field-report/all', 'FieldReportController@showAll');
+
 Route::post('/field-report/create', 'FieldReportController@saveFieldReport');
 
 Route::get('/field-report/{id}', 'FieldReportController@getFieldReport');

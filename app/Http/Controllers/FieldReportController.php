@@ -27,12 +27,13 @@ class FieldReportController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function showAll()
     {
         $user = auth()->user();
-        $userId = $user->id;
-        $allFieldReports = FieldReport::where('user_id', $userId)->get();
-        return view('home', ['user' => $user, 'allFieldReports' => $allFieldReports]);
+
+        $allFieldReports = FieldReport::where('approved', true)->get();
+
+        return view('all-reports', ['allFieldReports' => $allFieldReports]);
     }
 
     public function saveFieldReport(Request $request)
