@@ -44,6 +44,7 @@
                     @endphp
 
                     @foreach($comments as $comment)
+                    <div>{{$comment->user->name}}</div>
                     <div>{{$comment->content}}</div>
                     <hr>
                     @endforeach
