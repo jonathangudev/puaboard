@@ -29,7 +29,7 @@
                             @if($fieldReport->approved)
 
                             @else
-                            <form action="/field-report/approve/{{$fieldReport->id}}" method="POST"><input type="button" class="btn btn-primary" value="Approve"></form>
+                            <form action="/field-report/approve/{{$fieldReport->id}}" method="POST"> @csrf <input type="submit" class="btn btn-primary" value="Approve"></form>
                             @endif
                         </div>
 
