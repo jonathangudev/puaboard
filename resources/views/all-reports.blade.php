@@ -3,7 +3,7 @@
 
 @section('styles')
 .overflow {
-height: 200px;
+height: 150px;
 overflow: hidden;
 }
 @endsection
@@ -33,7 +33,7 @@ $fieldReports = $allFieldReports;
 
                     {!! $fieldReport->content !!}
                 </div>
-                <a href="/field-report/{{$fieldReport->id}}">Continue Reading...</a>
+                <a class="mb-1 mx-auto" href="/field-report/{{$fieldReport->id}}">Continue Reading...</a>
             </div>
         </div>
 
