@@ -51,11 +51,9 @@ $fieldReports = $allFieldReports;
                 @endphp
 
                 <div class="card-body">
-                    <ul class="list-group">
-                        @foreach($fieldReports as $fieldReport)
-                        <li class="list-group-flush">{{$fieldReport->created_at}} - <a href="/field-report/{{$fieldReport->id}}">{{$fieldReport->title}}</a></li>
-                        @endforeach
-                        <ul>
+                    @foreach($fieldReports as $fieldReport)
+                    <div class="list-group-flush">{{$fieldReport->created_at}} - <a href="/field-report/{{$fieldReport->id}}">{{$fieldReport->title}}</a></div>
+                    @endforeach
                 </div>
 
             </div>
