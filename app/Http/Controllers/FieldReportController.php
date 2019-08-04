@@ -10,7 +10,7 @@ use App\Comment;
 
 
 
-class FieldController extends Controller
+class FieldReportController extends Controller
 {
     /**
      * Create a new controller instance.
