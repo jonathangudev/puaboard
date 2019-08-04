@@ -28,3 +28,5 @@ Route::post('/field-report/delete/{id}', 'FieldReportController@deleteFieldRepor
 Route::post('/field-report/comment/{id}', 'FieldReportController@addCommentToFieldReport');
 
 Route::get('/admin', 'AdminController@index');
+
+Route::post('/field-report/approve/{id}', 'AdminController@approveFieldReport');
