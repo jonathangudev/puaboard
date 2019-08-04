@@ -48,7 +48,7 @@
                     <hr>
                     @endforeach
 
-                    <form action="/field-report/comment/{$fieldReport->id}" method="POST">
+                    <form action="/field-report/comment/{{$fieldReport->id}}" method="POST">
                         @csrf
 
                         <div class="form-group">
