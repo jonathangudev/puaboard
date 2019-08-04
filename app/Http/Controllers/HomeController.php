@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\FieldReport;
 
 use Auth;
+use App\Comment;
 
 
 
@@ -82,5 +83,16 @@ class HomeController extends Controller
         } else {
             abort('404');
         }
+    }
+
+    public function addCommentToFieldReport(Request $request, $id)
+    {
+        $user = Auth::user();
+
+        $comment = new Comment;
+
+        $comment->user_id = $user->id;
+        $comment->field_report_id = $id;
+        $comment->content = $request->input('content');
     }
 }

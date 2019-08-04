@@ -12,12 +12,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="http://cdn.tinymce.com/4/tinymce.min.js"></script>
-    <script>
-        tinymce.init({
-            selector: 'textarea'
-        });
-    </script>
+
 
 
     <!-- Fonts -->

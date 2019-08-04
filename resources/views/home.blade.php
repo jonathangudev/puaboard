@@ -5,6 +5,13 @@ $fieldReports = $allFieldReports;
 @endphp
 
 @section('content')
+<script src="http://cdn.tinymce.com/4/tinymce.min.js"></script>
+<script>
+    tinymce.init({
+        selector: 'textarea'
+    });
+</script>
+
 <div class="container">
     <div class="row justify-content-center">
 
