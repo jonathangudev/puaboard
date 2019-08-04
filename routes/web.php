@@ -19,10 +19,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::post('/field-report/create', 'HomeController@saveFieldReport');
+Route::post('/field-report/create', 'FieldReportController@saveFieldReport');
 
-Route::get('/field-report/{id}', 'HomeController@getFieldReport');
+Route::get('/field-report/{id}', 'FieldReportController@getFieldReport');
 
-Route::post('/field-report/delete/{id}', 'HomeController@deleteFieldReport');
+Route::post('/field-report/delete/{id}', 'FieldReportController@deleteFieldReport');
 
-Route::post('/field-report/comment/{id}', 'HomeController@addCommentToFieldReport');
+Route::post('/field-report/comment/{id}', 'FieldReportController@addCommentToFieldReport');
+
+Route::get('/admin/comment', '');
