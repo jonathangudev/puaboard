@@ -44,8 +44,8 @@
                     @endphp
 
                     @foreach($comments as $comment)
-                    <div>{{$comment->user->name}}</div>
-                    <div class="mt-2a">{{$comment->content}}</div>
+                    <div class="strong">{{$comment->user->name}}</div>
+                    <div class="mt-2">{{$comment->content}}</div>
                     <hr>
                     @endforeach
 
