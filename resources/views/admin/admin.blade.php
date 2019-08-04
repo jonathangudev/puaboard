@@ -25,7 +25,7 @@
                     <div class="row">
                         <div class="col-9">{{$fieldReport->id}} - {{$fieldReport->created_at}} - {{$fieldReport->title}}</div>
                         <div class="col-3">
-                            <form action="/field-report/approve/{{$fieldreport->id}}" method="POST"><input type="button" class="btn btn-primary" value="Approve"></form>
+                            <form action="/field-report/approve/{{$fieldReport->id}}" method="POST"><input type="button" class="btn btn-primary" value="Approve"></form>
                         </div>
                     </div>
                     @endforeach
