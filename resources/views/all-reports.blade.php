@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 
-@section
+@section('styles')
 #overflow {
 height: 200px;
 overflow: hidden;
