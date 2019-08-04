@@ -44,7 +44,7 @@
                     @endphp
 
                     @foreach($comments as $comment)
-                    <div>{{$commit->content}}</div>
+                    <div>{{$comment->content}}</div>
                     <hr>
                     @endforeach
 
