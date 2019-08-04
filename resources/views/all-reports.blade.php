@@ -2,7 +2,7 @@
 
 
 @section('styles')
-#overflow {
+.overflow {
 height: 200px;
 overflow: hidden;
 }
