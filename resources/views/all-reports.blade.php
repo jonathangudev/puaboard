@@ -5,6 +5,7 @@
 .overflow {
 height: 150px;
 overflow: hidden;
+text-overflow: ellipsis;
 }
 @endsection
 
