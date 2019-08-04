@@ -61,7 +61,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Field Reports</a>
+                            <a class="nav-link" href="/field-report/all">Field Reports</a>
                         </li>
                     </ul>
 
