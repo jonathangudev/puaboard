@@ -42,6 +42,7 @@ class FieldReportController extends Controller
         $fieldReport->title = $request->input('title');
         $fieldReport->content = $request->input('content');
         $fieldReport->user_id = auth()->user()->id;
+        $fieldReport->approved = false;
 
         $fieldReport->save();
 
