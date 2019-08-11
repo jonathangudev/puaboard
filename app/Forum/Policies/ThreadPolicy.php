@@ -16,7 +16,7 @@ class ThreadPolicy
      */
     public function deletePosts($user, Thread $thread)
     {
-        return true;
+        return false;
     }
 
     /**
@@ -28,7 +28,7 @@ class ThreadPolicy
      */
     public function rename($user, Thread $thread)
     {
-        return $user->getKey() === $thread->author_id;
+        return false;
     }
 
     /**
@@ -52,6 +52,6 @@ class ThreadPolicy
      */
     public function delete($user, Thread $thread)
     {
-        return Gate::allows('deleteThreads', $thread->category) || $user->getKey() === $thread->author_id;
+        return false;
     }
 }
