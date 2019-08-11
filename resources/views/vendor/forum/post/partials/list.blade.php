@@ -4,25 +4,25 @@
     </td>
     <td class="content">
         @if (!is_null($post->parent))
-            <p>
-                <strong>
-                    {{ trans('forum::general.response_to', ['item' => $post->parent->authorName]) }}
-                    (<a href="{{ Forum::route('post.show', $post->parent) }}">{{ trans('forum::posts.view') }}</a>):
-                </strong>
-            </p>
-            <blockquote>
-                {!! str_limit(Forum::render($post->parent->content)) !!}
-            </blockquote>
+        <p>
+            <strong>
+                {{ trans('forum::general.response_to', ['item' => $post->parent->authorName]) }}
+                (<a href="{{ Forum::route('post.show', $post->parent) }}">{{ trans('forum::posts.view') }}</a>):
+            </strong>
+        </p>
+        <blockquote>
+            {!! str_limit(Forum::render($post->parent->content)) !!}
+        </blockquote>
         @endif
 
         @if ($post->trashed())
-            <span class="label label-danger">{{ trans('forum::general.deleted') }}</span>
+        <span class="label label-danger">{{ trans('forum::general.deleted') }}</span>
         @else
-            {!! Forum::render($post->content) !!}
+        {!! Forum::render($post->content) !!}
         @endif
     </td>
 </tr>
-<tr class="post-footer">
+<!-- tr class="post-footer">
     <td>
         @if (!$post->trashed())
             @can ('edit', $post)
@@ -54,4 +54,4 @@
             @endif
         </span>
     </td>
-</tr>
+</tr -->
