@@ -22,14 +22,15 @@
 
                 <div class="card-body">
                     @foreach($fieldReports as $fieldReport)
-                    <div class="row">
+                    <div class="row my-2">
                         <div class="col-9">{{$fieldReport->id}} - {{$fieldReport->created_at}} - {{$fieldReport->title}}</div>
 
                         <div class="col-3">
                             @if($fieldReport->approved)
+                            <button disabled class="btn btn-secondary btn-sm" style="width: 66px" value="">Posted</button>
 
                             @else
-                            <form action="/field-report/approve/{{$fieldReport->id}}" method="POST"> @csrf <input type="submit" class="btn btn-primary" value="Approve"></form>
+                            <form action="/field-report/approve/{{$fieldReport->id}}" method="POST"> @csrf <input type="submit" class="btn btn-primary btn-sm" value="Approve"></form>
                             @endif
                         </div>
 
