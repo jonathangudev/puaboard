@@ -95,7 +95,7 @@ class FieldReportController extends Controller
 
         $comment->user_id = $user->id;
         $comment->field_report_id = $id;
-        $comment->content = $request->input('content');
+        $comment->content = nl2br($request->input('content')); //adds <br> tags in the appropriate places
 
         $comment->save();
 

@@ -8,11 +8,8 @@
             <div class="card">
                 <div class="card-header">{{$fieldReport->title}}</div>
 
-                <div class="card-body">
+                <div class="card-body" style="white-space: pre-line;;">
                     {{$fieldReport->created_at}}
-
-                    <p>
-                        <p>
 
                             {!! $fieldReport->content !!}
 
@@ -37,7 +34,7 @@
             <div class="card">
                 <div class="card-header">Comments</div>
 
-                <div class="card-body">
+                <div class="card-body" style="">
 
                     @php
                     $comments = $fieldReport->comments;

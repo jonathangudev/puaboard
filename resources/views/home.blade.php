@@ -5,11 +5,13 @@ $fieldReports = $allFieldReports;
 @endphp
 
 @section('content')
-<script src="http://cdn.tinymce.com/4/tinymce.min.js"></script>
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 <script>
+    /*
     tinymce.init({
-        selector: 'textarea'
-    });
+        selector: '#textarea'
+    });*/
+    //Need to change this.
 </script>
 
 <div class="container">
@@ -30,7 +32,7 @@ $fieldReports = $allFieldReports;
 
                         <div class="form-group">
                             <label for="content">Content</label>
-                            <textarea class="form-control" type="text" name="content" rows="10"></textarea>
+                            <textarea class="form-control" type="text" name="content" rows="10" id="textarea"></textarea>
                         </div>
 
                         <input class="btn btn-primary" type="submit" value="Submit">
