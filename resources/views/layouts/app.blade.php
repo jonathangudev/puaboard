@@ -44,9 +44,9 @@
                             <a class="nav-link" href="/home">Home</a>
                         </li>
 
-                        <li class="nav-item">
+                        <!--li class="nav-item">
                             <a class="nav-link" href="/forum">Forum</a>
-                        </li>
+                        </li -->
 
                         <li class="nav-item">
                             <a class="nav-link" href="/field-report/all">Field Reports</a>
