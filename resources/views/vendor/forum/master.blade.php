@@ -49,7 +49,7 @@
                     <ul class="nav navbar-nav navbar-left">
                         <li class="nav-item">
                             <a class="nav-link " href="{{ url('/') }}">
-                                {{ config('app.name', 'Laravel') }}
+                                {{ config('app.name', 'PUA Board') }}
                             </a>
                         </li>
                         <li class="nav-item">
